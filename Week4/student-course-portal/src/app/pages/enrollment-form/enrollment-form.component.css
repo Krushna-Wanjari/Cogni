@@ -1,0 +1,4 @@
+.field { margin-bottom: 0.75rem; display: flex; flex-direction: column; gap: 0.2rem; max-width: 320px; }
+.error { color: #c53030; font-size: 0.8rem; }
+.success { color: #2f855a; margin-top: 1rem; }
+input, select { padding: 0.4rem; }

@@ -1,0 +1,13 @@
+/* Global styles for Student Course Portal */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2933;
+}
+.ng-invalid.ng-touched { border-color: #e53e3e; }
+.ng-valid.ng-touched { border-color: #38a169; }
+button {
+  cursor: pointer;
+}

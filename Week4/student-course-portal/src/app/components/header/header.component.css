@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: #1a365d;
+  color: #fff;
+}
+.brand { font-weight: 700; font-size: 1.1rem; }
+.links a {
+  color: #cbd5e0;
+  text-decoration: none;
+  margin-left: 1.25rem;
+}
+.links a.active, .links a:hover { color: #fff; }
