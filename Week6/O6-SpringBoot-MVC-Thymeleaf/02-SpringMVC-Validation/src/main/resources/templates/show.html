@@ -1,0 +1,18 @@
+<form th:action="@{/conformation}" th:object="${customer}" method="post">
+
+    Enter First Name :
+    <input type="text" th:field="*{firstName}" placeholder="First Name">
+    <br>
+
+    Enter Last Name :
+    <input type="text" th:field="*{lastName}" placeholder="Last Name">
+
+    <span th:if="${#fields.hasErrors('lastName')}"
+          th:errors="*{lastName}"
+          class="error"></span>
+
+    <br>
+
+    <input type="submit" value="Submit">
+
+</form>

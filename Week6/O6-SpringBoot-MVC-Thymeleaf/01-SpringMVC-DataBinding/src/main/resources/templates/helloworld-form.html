@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>helloworld-inputForm</title>
+</head>
+<body>
+
+<form th:action="@{/result}" method="get"
+      style="text-align: center; margin: 20px;">
+
+    <input type="text"
+           name="Firstname"
+           placeholder="Enter First Name"
+           style="text-align: center; margin: 20px;"/>
+    <br>
+
+    <input type="text"
+           name="Lastname"
+           placeholder="Enter Last Name"
+           style="text-align: center; margin: 20px;"/>
+    <br>
+
+    <input type="number"
+           name="age"
+           placeholder="Enter age"
+           style="text-align: center; margin: 20px;"/>
+    <br>
+
+    <select name="country" >
+        <option th:each="country : ${countries}" th:value="${country}" th:text="${country}"></option>
+    </select>
+
+    <br>
+
+    <input name="gender" type="checkbox" th:each="gender : ${gender}" th:name="gender" th:value="${gender}" th:text="${gender}"/>
+
+    <br>
+    Select your Favorite Language :
+    <input name="language" type="radio" th:each="language : ${langs}" th:value="${language}" th:text="${language}"/>
+    <br>
+
+    <input type="submit" value="Submit"
+    style="text-align: center; margin: 20px;"/>
+
+</form>
+
+</body>
+</html>

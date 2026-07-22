@@ -1,0 +1,28 @@
+package com.example.Spring_Boot.demo.controller;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class DemoController {
+
+    @GetMapping("/")
+    public String home(){
+        return "home";
+    }
+
+    @GetMapping("/leaders")
+    public String leaders(){
+        return "leaders";
+    }
+
+    @GetMapping("/system")
+    public String system(){
+        return "system";
+    }
+
+    @GetMapping("access-Denied")
+    public String accessDenied(){
+        return "access-Denied";
+    }
+}
